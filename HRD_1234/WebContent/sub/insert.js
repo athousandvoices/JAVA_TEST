@@ -111,4 +111,5 @@
 			document.f.sno.select();
 			return false;
 		}	
+		return true;
 	}
