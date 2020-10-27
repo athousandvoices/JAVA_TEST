@@ -1,0 +1,156 @@
+/* Reset */
+* {
+	padding:0px; 
+	margin:0px; 
+	box-sizing:border-box;
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 	
+    -ms-box-sizing:border-box; 
+    -o-box-sizing:border-box;
+}
+/* 800px media query */
+.error800 {
+    display:none;
+    width:100%;
+    height:100%;
+    background-color:#29313f;
+    color:white;
+    z-index:99;
+    text-align:center;
+}
+#errortitle {
+	font-size:30px;
+	display:table-cell;
+	vertical-align:middle;
+}
+   @media (max-width: 800px) {
+      .error800 {
+         display:table;
+      }
+      .header {
+      	display:none;
+      }
+      .nav {
+      	display:none;
+      }
+      .section {
+      	display:none;
+      }
+      .footer {
+      	display:none;
+	}
+}
+	@media (max-width: 640px) {
+		#errortitle {
+			font-size:25px;
+		}
+	}
+	@media (max-width: 520px) {
+		#errortitle {
+			font-size:20px;
+		}
+	}
+	
+
+/* NanumSquareRound font import */
+@font-face { 
+	font-family: 'NanumSquareRound'; 
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') 
+ 	format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+	* {
+	font-family: 'NanumSquareRound'; 
+	}
+	
+/* Selection */
+::selection {
+	background-color:#252525;
+	color:white;
+}
+
+/* Html, Body */
+html {
+	width:100%;
+	height:100%;
+}
+body {
+	width:100%;
+	height:100%;
+}
+/* Header */
+.header {
+	width:100%;
+	height:12%;
+	background-color:#29313f;
+	text-align:center;
+	color:white;
+}
+#header_title {
+	padding-top:30px;
+}
+
+/* Nav */
+.nav {
+	width:100%;
+	height:3%;
+	background-color:#47bac1;
+}
+#nav_list {
+	padding-left:15px;
+	padding-top:2px;
+}
+.nav ul li {
+	display:inline;
+	list-style:none;
+	padding:30px;
+}
+.nav ul li a {
+	text-decoration:none;
+	color:white;
+	
+	/*
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+	*/
+	
+}
+
+/*
+.nav ul li a:hover {
+	text-shadow:3px 5px 5px #808080;
+}
+*/
+
+/* Section */
+.section {
+	width:100%;
+	height:80%;
+	text-align:center;
+	background-color:white;
+}
+#section_subtitle {
+	float:left;
+	margin-left:28px;
+}
+#section_list {
+	margin-left:10px;
+	text-align:left;
+	float:left;
+}
+
+/* Footer */
+.footer {
+	width:100%;
+	height:5%;
+	background-color:#29313f;
+	border-style:none;
+	text-align:center;
+	color:white;
+}
+#footer_title {
+	padding-top:13px;
+}
